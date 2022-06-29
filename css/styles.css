@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto';
+    background-color: #E5E5E5;
+}
+
+
+/* Header */
+
+.header {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+
+}
+
+.logo {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03 em;
+    color: #2196f3;
+}
+
+.menu {
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+    display: inline;
+}
+
+.horizontal-menu li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu-studio {
+    position: absolute;
+    width: 49px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.menu-studio :active {
+    color: #2196F3;
+}
+
+.menu-portfolio {
+    position: absolute;
+    width: 77px;
+    height: 16px;
+    left: 552px;
+    top: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.menu-contacts {
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    left: 679px;
+    top: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.menu>a {
+    padding: 50px;
+}
+
+.contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.contacts li {
+    text-decoration: none;
+    float: right;
+}
+
+.contacts-link :hover {
+    color: #2196F3;
+
+}
+
+/* Main title */
+
+.title {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background-color: #2F303A;
+}
+
+.title h1 {
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.title button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+/* Особенности */
+
+.speciality {
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+}
+
+.speciality ul {
+    display: inline-block;
+}
+
+/* Чем мы занимаемся */
+
+.our-work {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 969px;
+}
+
+
+/* Наша команда  */
+
+.team {
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+    background: #F5F4FA;
+}
+
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2097px;
+    background-color: #2F303A;
+}
