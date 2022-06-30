@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Вебстудия</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -11,50 +11,46 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="./portfolio.html">WebStudio</a>
+    <header class="header">
+      <nav class="menu">
+        <a class="logo" href="./portfolio.html"><span class="logo-accent">Web</span>Studio</a>
         <ul>
-          <li><a href="">Студия</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Портфолио</a></li>
-        </ul>
-        <ul>
-          <li><a href="">Контакты</a></li>
+          <li class="menu-studio"><a href="">Студия</a></li>
+          <li class="portfolio-menu"><a href="">Портфолио</a></li>
+          <li class="menu-contacts"><a href="">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contacts">
+        <li class="contacts-mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contacts-tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <ul>
-        <li><button>Все</button></li>
-        <li><button>Веб-сайты</button></li>
-        <li><button>Приложения</button></li>
-        <li><button>Дизайн</button></li>
-        <li><button>Маркетинг</button></li>
+      <ul class="filters">
+        <li class="filters-all"><button>Все</button></li>
+        <li class="filters-site"><button>Веб-сайты</button></li>
+        <li class="filters-app"><button>Приложения</button></li>
+        <li class="filters-design"><button>Дизайн</button></li>
+        <li class="filters-marketing"><button>Маркетинг</button></li>
       </ul>
-      <section>
+      <section class="projects">
         <ul>
-          <li>
+          <li class="projects-technokryak">
             <img src="./imagesportfolio/website.jpg" alt="website" width="370" height="294" />
             <h2>Технокряк</h2>
             <p>Веб-сайт</p>
           </li>
-          <li>
+          <li class="projects-design">
             <img
               src="./imagesportfolio/basketball.jpg"
               alt="two men playing basketball"
               width="370"
               height="294"
             />
-            <h1>Постер New Orlean vs Golden Star</h1>
+            <h2>Постер New Orlean vs Golden Star</h2>
             <p>Дизайн</p>
           </li>
-          <li>
+          <li class="projects-restaurant">
             <img
               src="./imagesportfolio/seafood.jpg"
               alt="Restaurant seafood"
@@ -64,7 +60,7 @@
             <h2>Ресторан Seafood</h2>
             <p>Приложение</p>
           </li>
-          <li>
+          <li class="projects-prime">
             <img
               src="./imagesportfolio/headphones.jpg"
               alt="black headphones"
@@ -74,7 +70,7 @@
             <h2>Проект Prime</h2>
             <p>Маркетинг</p>
           </li>
-          <li>
+          <li class="projects-boxes">
             <img
               src="./imagesportfolio/boxes.jpg"
               alt="white and brown boxes"
@@ -84,7 +80,7 @@
             <h2>Проект Boxes</h2>
             <p>Приложение</p>
           </li>
-          <li>
+          <li class="projects-site">
             <img
               src="./imagesportfolio/computer.jpg"
               alt="computer's screen"
@@ -94,7 +90,7 @@
             <h2>Inspiration has no Borders</h2>
             <p>Веб-сайт</p>
           </li>
-          <li>
+          <li class="projects-magazine">
             <img
               src="./imagesportfolio/magazine.jpg"
               alt="opened magazine"
@@ -104,7 +100,7 @@
             <h2>Издание Limited Edition</h2>
             <p>Дизайн</p>
           </li>
-          <li>
+          <li class="projects-lab">
             <img
               src="./imagesportfolio/labeltag.jpg"
               alt="white labeltag"
@@ -114,7 +110,7 @@
             <h2>Проект LAB</h2>
             <p>Маркетинг</p>
           </li>
-          <li>
+          <li class="projects-app">
             <img
               src="./imagesportfolio/laptop.jpg"
               alt="typing on laptop"
@@ -127,13 +123,13 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="./portfolio.html">WebStudio</a>
+    <footer class="footer">
+      <a class="footer-logo" href="./portfolio.html"><span class="logo-accent">Web</span>Studio</a>
       <address>
         <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li>info@example.com</li>
-          <li>+38 099 111 11 11</li>
+          <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+          <li class="footer-mail">info@example.com</li>
+          <li class="footer-tel">+38 099 111 11 11</li>
         </ul>
       </address>
     </footer>
