@@ -31,7 +31,7 @@ body {
 }
 
 .link {
-    color: var(--main-text-color);
+
     text-decoration: none;
 }
 
@@ -44,7 +44,8 @@ body {
     font-size: 26px;
 }
 
-.link .logo-accent {
+.link .logo-accent,
+.footer-logo .logo-accent {
     color: var(--accent-color);
 }
 
@@ -52,20 +53,25 @@ body {
     color: var(--nav-text-color);
 }
 
-.navigation .link {
+.navigation-list {
+    text-decoration: none;
+    list-style: none;
+}
+
+.navigation .nav-link {
     font-family: 'Roboto';
     font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--nav-text-color);
     cursor: pointer;
     list-style: none;
     text-decoration: none;
+    color: var(--second-header-color);
 }
 
-.navigation .link:hover,
-.navigation .link:focus {
+.navigation .nav-link:hover,
+.navigation .nav-link:focus,
+.navigation .nav-link:active {
     color: var(--accent-color)
 }
 
@@ -235,8 +241,9 @@ body {
     background-color: #2f303a;
 }
 
-.footer ul {
+.footer-link {
     list-style-type: none;
+    text-decoration: none;
 }
 
 .footer-logo {
@@ -249,34 +256,20 @@ body {
     color: #ffffff;
 }
 
-.footer-address {
+.footer-contacts {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--footer-contcs-clr);
 }
 
-.footer-mail {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-tel {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+.footer-link .footer-contacts:hover,
+.footer-link .footer-contacts:focus {
+    color: var(--main-header-color);
+    cursor: pointer;
 }
 
 /* Portfolio page 2 */
@@ -284,11 +277,11 @@ body {
 
 /* Filters Portfolio */
 
-.filters {
+.filters-list {
     list-style-type: none;
 }
 
-.filters-all {
+.filters-btn {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -296,296 +289,49 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--second-header-color);
+    background-color: var(--second-bcg-color);
+    display: inline;
 }
 
-.filters button:hover,
-.filters button:active {
-    color: #212121;
-    background-color: #2196f3;
-}
-
-
-
-.filters-site {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.filters-app {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.filters-design {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
-
-.filters-marketing {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+.filters-list .filters-btn:hover,
+.filters-list .filters-btn:active {
+    color: var(--main-header-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 /* Projects Portfolio */
-
-.projects ul {
-    width: 1170px;
-    height: 1360px;
-    left: 215px;
-    top: 174px;
-    list-style-type: none;
+.projects {
+    list-style: none;
+    text-decoration: none;
 }
 
-.projects-technokryak {
+.projects-item {
+    border-color: var(--button-color-hover);
+    border: 1px;
+}
+
+.projects-item .projects-image {
     width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 262px;
+    height: 294px;
 }
 
-.projects-technokryak h2 {
+.projects-title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 2;
+    line-height: calc(36/18);
     letter-spacing: 0.06em;
-
-    color: #212121;
+    color: var(--second-header-color);
 }
 
-.projects-technokryak p {
+.projects-text {
     font-family: 'Roboto';
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 30px;
     letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.projects-design {
-    width: 370px;
-    height: 404px;
-    left: 615px;
-    top: 262px;
-}
-
-.projects-design h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-
-    color: #212121;
-}
-
-.projects-design p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-
-    color: #757575;
-}
-
-.projects-restaurant {
-    width: 370px;
-    height: 404px;
-    left: 1015px;
-    top: 262px;
-}
-
-.projects-restaurant h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-restaurant p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-prime {
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 696px;
-}
-
-.projects-prime h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-prime p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-boxes {
-    width: 370px;
-    height: 404px;
-    left: 615px;
-    top: 696px;
-}
-
-.projects-boxes h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-boxes p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-site {
-    width: 370px;
-    height: 404px;
-    left: 1015px;
-    top: 696px;
-}
-
-.projects-site h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-site p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-magazine {
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 1130px;
-}
-
-.projects-magazine h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-magazine p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-lab {
-    width: 370px;
-    height: 404px;
-    left: 615px;
-    top: 1130px;
-}
-
-.projects-lab h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-lab p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
-}
-
-.projects-app {
-    width: 370px;
-    height: 404px;
-    left: 1015px;
-    top: 1130px;
-}
-
-.projects-app h2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-    color: #212121;
-}
-
-.projects-app p {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--main-text-color);
 }
