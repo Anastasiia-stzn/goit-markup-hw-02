@@ -4,6 +4,7 @@
     --second-bcg-color: #f5f4fa;
     --nav-text-color: #000000;
     --accent-color: #2196F3;
+    --btn-hover-color: #188CE8;
     --hero-bcg-color: #2F303A;
     --main-header-color: #ffffff;
     --second-header-color: #212121;
@@ -18,7 +19,6 @@
 
 body {
     font-family: Roboto, sans-serif;
-    font-family: Raleway, sans-serif;
     color: var(--main-text-color);
     background-color: var(--main-bcg-color);
 
@@ -75,16 +75,18 @@ body {
     color: var(--accent-color)
 }
 
+.link-current {
+    color: var(--accent-color);
+}
+
 /* Contacts */
 
 .contacts .contacts-link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-header-color);
+    color: var(--main-text-color);
     list-style: none;
     text-decoration: none;
 }
@@ -103,11 +105,9 @@ body {
 }
 
 .hero .hero-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: calc(60/44);
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -120,11 +120,9 @@ body {
 
     background-color: var(--accent-color);
 
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(30/16);
+    line-height: 1.87;
 
     align-items: center;
     text-align: center;
@@ -135,7 +133,7 @@ body {
 
 .hero .hero-button:hover,
 .hero .hero-button:focus {
-    background-color: var(--button-color-hover);
+    background-color: var(--btn-hover-color);
     cursor: pointer;
 }
 
@@ -152,22 +150,18 @@ body {
 }
 
 .speciality .item-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--second-header-color);
 }
 
 .speciality .item-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24/14);
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
@@ -176,11 +170,9 @@ body {
 
 .work-title,
 .team-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(42/36);
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
@@ -198,6 +190,9 @@ body {
 }
 
 /*  Kоманда  */
+.team {
+    background-color: var(--second-bcg-color);
+}
 
 .team-card {
     width: 270px;
@@ -212,22 +207,18 @@ body {
 }
 
 .card-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(19/16);
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--second-header-color);
 }
 
 .card-text {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: calc(19/16);
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
@@ -236,18 +227,16 @@ body {
 /* Footer */
 
 .footer {
-    width: 1600px;
-    height: 252px;
-    background-color: #2f303a;
+    background-color: var(--footer-bcg-clr);
 }
 
 .footer-link {
-    list-style-type: none;
+    list-style: none;
     text-decoration: none;
 }
 
 .footer-logo {
-    font-family: 'Raleway';
+    font-family: Raleway;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -256,14 +245,15 @@ body {
     color: #ffffff;
 }
 
-.footer-contacts {
-    font-family: 'Roboto';
-    font-style: normal;
+.footer-link .footer-contacts {
     font-weight: 400;
+    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-contcs-clr);
+    list-style: none;
+    text-decoration: none;
 }
 
 .footer-link .footer-contacts:hover,
@@ -282,8 +272,6 @@ body {
 }
 
 .filters-btn {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -307,31 +295,23 @@ body {
     text-decoration: none;
 }
 
-.projects-item {
-    border-color: var(--button-color-hover);
-    border: 1px;
-}
-
 .projects-item .projects-image {
     width: 370px;
     height: 294px;
 }
 
 .projects-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: calc(36/18);
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--second-header-color);
 }
 
 .projects-text {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
